@@ -1,3 +1,11 @@
+
+.div{
+	display: flex;
+}
+.score{
+	font-size: 16px;
+	font-weight: bold;
+}
 .game{
 	width: 600px;
 	height: 200px;
@@ -11,6 +19,7 @@
 	background-size: 50px 50px;
 	position: relative;
 	top: 150px;
+	transition: 0.3s all linear;
 }
 
 #cactus{
@@ -49,4 +58,55 @@
 		top: 150px;
 	}
 }
+.bg{
+	overflow: hidden;
+	width: 600px;
+	margin: auto;
+}
+.dirt{
+	overflow: hidden;
+	padding-top: 5px;
+	display: flex;
+	width: 1200px;
+	height: 20px;
+	margin: auto;
+	position: relative;
+	animation: moveBg 3s infinite linear;
+}
+@keyframes moveBg{
+	0%{
+		right: 0px; 
+	}
+	100%{
+		right: 600px;
+	}
+}
+.point{
+	margin-left: 10px;
+	width: 6px;
+	height:6px;
+	background-color: #000;
+}
+.point2{
+	margin-top: 10px;
+	margin-left: 8px;
+	width: 8px;
+	height:5px;
+	background-color: #000;
+}
+.point3{
+	margin-left: 12px;
+	width: 7px;
+	height:6px;
+	background-color: #000;
+}
+.rock{
+	margin-top: 5px;
+	margin-left: 6px;
+	border-radius: 10px;
+	width: 10px;
+	height:10px;
+	background-color: #000;
+}
+
 
